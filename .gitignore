@@ -1,0 +1,13 @@
+# .gitignore                                                       -*- conf -*-
+
+# Editor backup files
+*~
+
+# Compiled Haskell
+*.hi
+*.o
+dist/
+
+# Cabal stuff
+.cabal-sandbox/
+cabal.sandbox.config
