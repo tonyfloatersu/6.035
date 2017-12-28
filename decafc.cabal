@@ -20,6 +20,8 @@ maintainer:          bbaren@mit.edu
 license:             MIT
 license-file:        LICENSE
 extra-source-files:  alex/AlexWrapper-6.035
+                   , src/Parser.y
+                   , src/Scanner.x
 build-type:          Simple
 tested-with:         GHC==7.10.3
 

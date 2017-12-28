@@ -10,9 +10,10 @@
 # FOR A PARTICULAR PURPOSE.  See the X11 license for more details.
 
 GITROOT=$(git rev-parse --show-toplevel)
-DECAFC="$GITROOT/.cabal-sandbox/bin/decafc"
+DECAFC="$GITROOT/.stack-work/install/x86_64-linux-tinfo6-nopie/lts-6.35/7.10.3/bin/decafc"
 
 if [ ! -f $DECAFC ]; then
-    $GITROOT/build.sh
+    cd $GITROOT
+    stack build
 fi
 $DECAFC $@
